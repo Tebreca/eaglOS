@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>eaglOS login</title>
+        <link rel="stylesheet" href="styles/login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <form name="login">
+                <div>Username</div>
+                <input type="text" name="usname">
+                <div>Password</div>
+                <input type="text" name="password"><br>
+                <button type="button" onclick="testtrue()" name="loginbutton">login</button>
+                </form>
+        </div>
+        <script>
+            function testtrue(){
+                var userN = usname.value;
+                var passW = password.value;
+                if (userN ===! null && passW ===! null){
+                    if (userN === "Test" && passW === "test"){
+                        window.location ("./users/ewan/desktop.html");
+                    }
+                }else {
+                    console.log("password: " + passW + " isn't valid!!");
+                }
+            }
+        </script>
+    </body>
+</html>
