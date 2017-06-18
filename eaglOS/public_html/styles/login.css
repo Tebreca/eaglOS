@@ -11,9 +11,15 @@ body {
    border-color: black;
    border-style: solid;
    width: 200px;
+   border-radius: 13px;
 }
 
-#loginbutton {
-    margin-top: 15px;
-    margin-left: 75px;
+button {
+    margin-bottom: 2.5px;
+    margin-left: 30px;
+    width: 145px;
+}
+
+.Iinput{
+    margin-left: 16px;
 }
