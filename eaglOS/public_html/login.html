@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>eaglOS login</title>
@@ -14,24 +9,24 @@ and open the template in the editor.
     <body>
         <div class="container">
             <form name="login">
-                <div>Username</div>
-                <input type="text" name="usname">
-                <div>Password</div>
-                <input type="text" name="password"><br>
-                <button type="button" onclick="testtrue()" name="loginbutton">login</button>
+                <div class="Iinput">Username</div>
+                <input class="Iinput" type="text" id="username">
+                <div class="Iinput">Password</div>
+                <input class="Iinput" type="password" id="password"><br>
+                <button type="button" onclick="testtrue();" name="loginbutton">login</button>
                 </form>
         </div>
         <script>
             function testtrue(){
-                var userN = usname.value;
-                var passW = password.value;
-                if (userN ===! null && passW ===! null){
-                    if (userN === "Test" && passW === "test"){
-                        window.location ("./users/ewan/desktop.html");
-                    }
-                }else {
+                var Usname = document.getElementById("username").value;
+                var passW = document.getElementById("password").value;
+                var lengthun = document.getElementById("username").length;
+                var lengthpw = document.getElementById("password").length;
+                    if (Usname === "Test" && passW === "test"){
+                        window.location.replace("./users/ewan/desktop.html");
+                    }else {
                     console.log("password: " + passW + " isn't valid!!");
-                }
+                    }
             }
         </script>
     </body>
