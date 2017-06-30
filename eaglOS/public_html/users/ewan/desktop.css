@@ -1,11 +1,25 @@
 body {
     background-image: url("http://www.planwallpaper.com/static/images/nature-hd-background-10.jpg");
+    background-size: 100%;
 }
 
 #bar {
-    height: 230px;
+    height: 100px;
     width: 1350px;
-    margin-top: 500px;
     margin-left: 5px;
     padding: 0px;
+}
+
+#icons {
+    height: 643px;
+}
+
+#menu{
+    background-color: gray;
+    width: 458px;
+    height: 250px;
+    position: absolute;
+    top: 410px;
+    left: 15px;
+    
 }
